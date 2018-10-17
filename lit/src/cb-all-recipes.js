@@ -5,7 +5,7 @@ import CookbookService from 'cookbook-service/service.js';
 import './cb-recipe.js';
 import 'fuse.js/dist/fuse.js';
 
-const service = new CookbookService('http://localhost:3000');
+const service = new CookbookService();
 
 class CBAllRecipes extends LitElement {
   constructor(){

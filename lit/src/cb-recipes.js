@@ -3,7 +3,7 @@ import CookbookService from 'cookbook-service/service.js';
 import sharedStyles from './shared-styles.js';
 
 // import './cb-header.js';
-const service = new CookbookService('http://localhost:3000');
+const service = new CookbookService();
 
 class CBRecipes extends LitElement {
   constructor(){

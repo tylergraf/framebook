@@ -5,7 +5,7 @@ import sharedStyles from './shared-styles.js';
 
 import CookbookService from 'cookbook-service/service.js';
 
-const service = new CookbookService('http://localhost:3000');
+const service = new CookbookService();
 
 class CBRecipe extends LitElement {
   constructor(){
