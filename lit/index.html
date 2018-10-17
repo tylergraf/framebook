@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.png">
+    <title>Lit Cookbook</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    <cb-app></cb-app>
+
+    <!-- <script src="/node_modules/systemjs/dist/system.js"></script>
+    <script>
+      System.import('/dist/index.js');
+    </script> -->
+    <script>
+    var startTime;
+    var lastMeasure;
+
+    const startMeasure = function(name) {
+      startTime = performance.now();
+      lastMeasure = name;
+    };
+    const stopMeasure = function() {
+      window.setTimeout(function() {
+        var stop = performance.now();
+        console.log(lastMeasure+" took "+(stop-startTime));
+      }, 0);
+    };
+    </script>
+    <script src="/src/cb-app.js" type="module"></script>
+
+  </body>
+</html>

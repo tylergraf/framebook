@@ -1,0 +1,38 @@
+@import '~style/helpers';
+
+.header {
+  height: 50px;
+  background: linear-gradient(to left, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  align-items: center;
+
+	h1,a {
+    margin: 0 0 0 10px;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+	nav {
+		float: right;
+		font-size: 100%;
+
+		a {
+			display: inline-block;
+			height: 56px;
+			line-height: 56px;
+			padding: 0 15px;
+			min-width: 50px;
+			text-align: center;
+			background: rgba(255,255,255,0);
+			text-decoration: none;
+			color: #EEE;
+			will-change: background-color;
+
+			&:hover, &:active {
+				background: rgba(255,255,255,0.3);
+			}
+		}
+	}
+}
