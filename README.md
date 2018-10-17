@@ -11,7 +11,7 @@ To compare frameworks on a few criteria:
 ## Frameworks
 * [Lit](https://polymer.github.io/lit-html/) - https://cookbook-lit.firebaseapp.com
 * [Preact](https://preactjs.com/) - https://cookbook-preact.firebaseapp.com
-* [Vue](https://vuejs.org/) https://cookbook-vue.firebaseapp.com
+* [Vue](https://vuejs.org/) -  https://cookbook-vue.firebaseapp.com
 
 ## App Requirements
 
