@@ -13,6 +13,22 @@ To compare frameworks on a few criteria:
 * [Preact](https://preactjs.com/) - https://cookbook-preact.firebaseapp.com
 * [Vue](https://vuejs.org/) -  https://cookbook-vue.firebaseapp.com
 
+## Results
+#### Payload (Categories Page)
+* Lit - `17.8KB`
+* Preact - `27.7KB`
+* Vue - `112KB`
+
+#### Scripting (Categories Page)
+* Lit - `~23ms`
+* Preact - `~15ms`
+* Vue - `~60ms`
+
+#### All Recipes Filter (type 'a')
+* Lit - `~300ms`
+* Preact - `~1000ms`
+* Vue - `~180ms`
+
 ## App Requirements
 
 ### Pages

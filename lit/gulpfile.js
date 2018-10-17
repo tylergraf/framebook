@@ -35,7 +35,7 @@ gulp.task('index', function(){
 });
 
 gulp.task('system', function(){
-  return gulp.src('./node_modules/systemjs/dist/system.js')
+  return gulp.src(['./node_modules/systemjs/dist/system.js','favicon.png'])
     .pipe(gulp.dest('./dist/'))
 });
 
