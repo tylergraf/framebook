@@ -8,7 +8,7 @@ export default class Header extends Component {
 			<header class={style.header}>
 				<h1><Link href="/">Preact Cookbook</Link></h1>
 				<nav>
-					<Link href="/all">All</Link>
+					<Link href="/all">All Recipes</Link>
 				</nav>
 			</header>
 		);

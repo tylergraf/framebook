@@ -3,7 +3,7 @@
     <header>
       <h1><router-link v-bind:to="'/'">Vue Cookbook</router-link></h1>
       <nav>
-        <router-link v-bind:to="'/all'">All</router-link>
+        <router-link v-bind:to="'/all'">All Recipes</router-link>
       </nav>
     </header>
     <main>
@@ -55,6 +55,7 @@ header {
   color: #ffffff;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 header h1,
