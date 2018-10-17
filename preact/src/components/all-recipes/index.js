@@ -2,7 +2,6 @@ import { h, Component } from 'preact';
 import { Link } from 'preact-router';
 import CookbookService from 'cookbook-service/service.js';
 import Recipe from '../recipe';
-import 'lit/src/cb-recipe.js';
 import Fuse from 'fuse.js/dist/fuse.js';
 
 const service = window.CookbookService;
@@ -87,7 +86,7 @@ export default class Recipes extends Component {
 				<ul>
 					{this.state.recipes && this.state.recipes.map((recipe) =>
 						<li key={recipe._id}>
-							<cb-recipe recipe={recipe} collapsed={this.state.collapsed}></cb-recipe>
+							<Recipe recipe={recipe} collapsed={this.state.collapsed}/>
 						</li>
 					)}
 				</ul>
